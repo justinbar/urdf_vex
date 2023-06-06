@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <joint name="line_joint" type="fixed">
+        <parent link="vex_chassis"/>
+        <child link="line_link"/>
+        <origin xyz="-0.1 0.25 0.075"/>
+    </joint>
+
+    <link name="line_link">
+        <visual>
+            <geometry>
+                <box size="0.2 0.1 0.07"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        
+    </link>
+
+    <joint name="line_joint2" type="fixed">
+        <parent link="vex_chassis"/>
+        <child link="line_link2"/>
+        <origin xyz="-0.1 -0.23 0.075"/>
+    </joint>
+
+    <link name="line_link2">
+        <visual>
+            <geometry>
+                <box size="0.2 0.1 0.07"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        
+    </link>
+
+    <gazebo reference="line_link2">
+        <material>Gazebo/Gray</material>
+    </gazebo>
+
+
+  
+    <gazebo reference="line_link">
+        <material>Gazebo/Gray</material>
+    </gazebo>
+
+    
+</robot>
