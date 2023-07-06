@@ -1,7 +1,7 @@
 # vex_robot-URDF
 # this project is to be use with ros2
 # create a new directory such as 
-$ mkdir -p robot_ws/src
+$ mkdir -p robot_ws
 # now clone my file by using 
 $ git clone https://github.com/justinbar/urdf_vex.git 
 # change my folder name "urdf_vex" to "vex_robot"
